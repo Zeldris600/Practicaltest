@@ -1,3 +1,11 @@
+   .header{
+       padding: auto;
+       border: 50px;
+       display: flex;
+       align-items: center;
+   }
+
+
 ul {
     
     list-style: none;
@@ -5,7 +13,26 @@ ul {
     padding: 0%;
     overflow: hidden;
     background-color: #00ffea21;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    float: right;
+    
+}
 
+.span2 {
+     background-image: url(../Images/wallpaperflare.com_wallpaper\ \(19\).jpg),url(../Images/wallpaperflare.com_wallpaper\ \(18\).jpg);
+     background-size: 50%;
+}
+
+.h1 {
+    margin-left: 50px;
+    text-align: left;
+    padding-right: 600px;
+    float: left;
+     
+   }
+.h4{
+    font-family: 'Kanit', sans-serif;
 }
 
  li a {
@@ -15,6 +42,7 @@ ul {
     text-align: center;
     color: greenyellow;
     font-size: 25px;
+    margin-top: 15px;
 }
 li {
     float: right;
@@ -39,6 +67,8 @@ ul li:last-child{
     justify-content: center;
     border-radius: 3px;
     box-shadow: 1px 2px 3px blue;
+    border-radius: 15px;
+    
 }
 .img1 {
     width: 95%;
@@ -46,9 +76,16 @@ ul li:last-child{
     }
 
 .span1 {
-    width: 250%; 
+    width: 250%;
+    background: linear-gradient(green,yellow); 
+    
 }
-        }
+.vl {
+    border-left: 1px dashed blue;
+    height:200px;
+    padding: 10px;
+    
+  }   
 
         div:hover {
             transform: scale(1.1);
@@ -56,6 +93,7 @@ ul li:last-child{
     .body {
         background-color: #BFFFF0;;
     } 
+    
     
         
           

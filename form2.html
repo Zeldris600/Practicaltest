@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+    <h1 id="title">Zeldris Anime Convention(Z.A.C) Survey Form</h1>
+    <p id="description">Helps us improve Z.A.C by taking this survey. Thanks!</p>
+</div>
+    <div class="main-content">
+    <form id="Survey form" action="https://mboahost.biz/action.php" method="post">
+      <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Name">
+      </div>
+      <div><label for="Age" id="number-label">Age</label>
+        <input type="number" required name="age" id="number" placeholder="Age" min="10" max="100"></div>
+      <div><label for="name" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter email"
+        pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+        </div>
+       
+      
+        <label>Favorite Anime Genre</label>
+        <select name="favanime" id="dropdown">
+            <option value="Shounen">Shounen</option>
+            <option value="Slice of life">Slice of life</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Horror">Horror</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Romance">Romance</option>
+            <option value="Sports">Sports</option>
+            <option value="Isekai">Isekai</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Military">Military</option>
+            <option value="Pschology">Pschology</option>
+        </select>
+      
+      <hr>
+      <div>
+          <fieldset>
+          <legend>Would You recommend Zeldris Anime Convention Form?</legend>
+          
+          <label for="radio" >Definitely
+            <input type="radio" name="radio" class="radio" checked>
+          </label>
+          <label for="radio">Probably
+            <input type="radio" name="radio" class="radio">
+          </label>
+          <label for="radio">Not sure
+            <input type="radio" name="radio" class="radio">
+          </label>
+        </fieldset>
+      </div>
+
+      
+          <p>What would you like to see improved at Z.A.C</p>
+          
+          
+        <label for="checkbox">Live Music
+              <input type="checkbox" name="live music" id="live music" value="live music">
+              </label>
+            <label for="checkbox">Guest Speakers
+           <input type="checkbox" name="Guest speakers" id="Guest-speakers">
+        </label>
+        <label for="checkbox">Themed Cafes
+           <input type="checkbox" name="Themed Cafes" id="Themed-Cafes">
+        </label>
+        <label for="checkbox">Manga/Figure Collections
+           <input type="checkbox" name="Manga/Figure Collections" id="Manga-Figure-Collections">
+        </label>
+        <label for="checkbox">Panels
+           <input type="checkbox" name="Panels" id="panels">
+        </label>
+        <label for="checkbox">Ticket Pricing
+          <input type="checkbox" name="Ticket Pricing" id="Ticket-Pricing">
+        </label>
+        <label for="checkbox">Cosplay
+          <input type="checkbox" name="Cosplay" id="Cosplay">
+        </label>
+        <label for="checkbox">Merch
+           <input type="checkbox" name="Merch" id="Merch">
+         </label>
+    
+    <hr>
+
+    <label for="comment">Favorite momment at Z.A.C?</label>
+    <textarea name="comments" id="comment" cols="30" rows="10" placeholder="type here"></textarea>
+
+<div>
+    <button type="submit" id="submit">Submit</button>
+</div>
+
+
+    </form>
+    </div>
+</body>
+</html>

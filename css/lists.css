@@ -1,0 +1,14 @@
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: url(../Images/image1.jpg) no-repeat ;
+    background-size: 28px;
+    background-position-x: 0%;
+    background-position-y: 50%;
+    padding-left: 43px;
+    padding-bottom: 10px;
+    
+
+}

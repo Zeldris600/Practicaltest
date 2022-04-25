@@ -1,0 +1,40 @@
+ .grid {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}  
+
+grid-item {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}  
+img {
+    width: 25%;
+    height: auto;
+}
+
+@media (min-width: 960px) {
+    .grid {
+        /* create 5*3 grid layout */
+         grid-template-columns: repeat(5, 1fr); 
+        grid-template-rows: repeat(3,  auto-flow );
+          
+    }
+    .grid-item:first-child,
+    
+    .grid-item:nth-child(4),
+    .grid-item:nth-child(3) {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .grid-item:nth-child(2) {
+        grid-column: span 2;
+        grid-row: span 2;
+    } 
+
+
+
