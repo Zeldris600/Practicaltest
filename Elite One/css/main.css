@@ -1,0 +1,113 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Designing the global container*/
+
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    min-height: 100vh;
+   /*  background: #000; */
+}
+
+/*Designing the left menu*/
+aside {
+    padding: 8px;
+    background: red;
+    width: 20%;
+}
+ /*Designing the left menu and contents to give a spacing*/
+ aside div , .white-border {
+     padding: 10px;
+ }
+ .right-side {
+    width: 80%;
+}
+ /*Designing yellow-border block or first block in the content*/ 
+ .yellow-border {
+     padding: 0;
+      width: 45%;
+    /*  max-width: 300px;  */
+     
+ }
+
+ .yellow-border .headline {
+     background-color: blue;
+     margin-top: 0;
+     padding: 8px;
+     height: calc(100vh - 151px - 91px);
+ }
+ .headline h1 {
+     color: white;
+ }
+ .white-border {
+     width: 55%;
+ }
+
+ /*Using flexbox to display elements side by side*/
+header, .content {
+    display: flex;
+}
+ /* Header Adding space between header element*/
+
+ header {
+     background-color: #000;
+     height: 38px;
+
+ }
+
+ .header-info {
+     color: white;
+ }
+header span {
+    margin: 5px;
+}
+/*Designing the heading block*/
+ .heading-block {
+     background: #000 url(../Image/Logo-icon.png) 0 25% no-repeat;
+     background-size: 65px;
+     padding-left: 66px;
+     padding-right: 10px;
+     padding-top: 35px;
+     padding-bottom: 35px;
+     height: 128px;
+ }
+.page-title {
+    color: yellow;
+    margin: 0;
+}
+
+.sub-title {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+ .white-border {
+     width: calc(100vw - 20% 300px);
+     background: url(../Image/page_image.jpg) 0 27% no-repeat;
+     background-size: cover;
+     position: relative;
+
+ }
+ .white-border h1 {
+     position: absolute;
+     bottom: 104px;
+     left: 10px;
+     background: #00000055;
+     color: white;
+     padding: 10px;
+     font-size: 42px;
+     text-transform: uppercase;
+ }
+.white-border a {
+    position: absolute;
+     bottom: 74px;
+     left: 10px;
+     background: yellow; /* color: yellow; */
+     padding: 1px;
+     font-size: 42px;
+} 

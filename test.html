@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="/css/test.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://mboahost.biz/action.php" method="post">
+        <code>
+            let str = "Please locate where 'locate' occurs!";
+            Choose the Good answer.
+        </code> 
+        <div>
+            <label for="a1">str.indexOf('locate')</label>
+            <input type="number" id="a1" name="a1">
+        </div>
+        <div>
+            <label for="a1">str.lastIndexOf('l')</label>
+            <input type="number" id="a2" name="a2">
+        </div>
+        <div>
+            <label for="a3">str.search('occ')</label>
+            <input type="number" id="a3" name="a3">
+        </div>
+        <h3>str.includes('game')</h3>
+        <div>
+            <label for="a4">true</label>
+            <input type="radio" id="a4" value="0" name="a4">
+        </div>
+        <div>
+            <label for="a4-2">false</label>
+            <input type="radio" id="a4-2" value="1" name="a4">
+        </div>
+         <h3>str.startsWith('p')</h3>
+         <div>
+            <label for="a5-1">True</label>
+            <input type="radio" id="a5-1" value="0" name="a5">
+        </div>
+        <div>
+            <label for="a5-2">False</label>
+            <input type="radio" id="a5-2" value="1" name="a5">
+        </div>
+        </div>
+         <h3>str.endsWith('!')</h3>
+        <div>
+            <label for="a6-1">True</label>
+            <input type="radio" id="a6-1" value="1" name="a6">
+        </div>
+        <div>
+            <label for="a6-2">False</label>
+            <input type="radio" id="a6-2" value="0" name="a6">
+        </div>
+        <div>
+            <label for="a7">str.slice(7,12)</label>
+            <input type="text" id="a7" name="a7">
+        </div>
+        <div>
+            <label for="a8">str.substring(10,-5)</label>
+            <input type="text" id="a8" name="a8">
+        </div>
+        
+        <div>
+            <button>Submit the form</button>
+        </div>
+    </form>
+</body>
+<script>
+    let res = {a1:7,a2:21,a3:29,a4:false,a5:false,a6:true,a7:"locat",a8:"Please loc"}
+    Array.from(document.querySelectorAll('input')).map(e=>{
+        e.addEventListener('change',a=>{
+           console.log(a.target.name,a.target.value)
+           a.target.parentElement.style.background=res[a.target.name]==a.target.value?'#5fd35f':'red'
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="name" id="inputStudent" placeholder="Enter Name">
+    <input type="number" name="age" id="inputAge" placeholder="Enter Student Age">
+    <button onclick="pushStudents2()">Save</button>
+    
+    <script>
+ const students = [];
+ 
+ const s2 = JSON.stringify(students);
+ localStorage.setItem("name","zeldris");
+ localStorage.setItem("age","22");
+ 
+
+
+     function pushStudents2() {
+        let x = document.getElementById("inputStudent").value;
+        let y = document.getElementById("inputAge").value;
+        const pushStudents = {
+                name: x,
+                age: y
+            } 
+        let students3 = students.push(pushStudents)
+    
+}  
+/* function pushStudents1() {
+    let students2 = students.push(document.getElementById("inputStudent").value)
+    }
+
+     function pushStudents2() {
+    let students2 = students.push(document.getElementById("inputAge").value)
+    } */
+       
+  
+
+    </script>
+</body>
+</html>

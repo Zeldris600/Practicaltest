@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="perimterout"></div>
+    <div>
+       <script>
+         var someradius = 18;
+         function perimeter(radius){
+         
+         const pi= 3.14;
+         let p = Math.round(2*radius) * pi;
+         return p;
+     }
+
+
+         function isfirstgreater(a,b) {
+             
+         return a > b; 
+     } 
+     /* document.write(`is b greater than a? ${isfirstgreater('a','b')}`)
+     document.getElementById('perimterout').innerHTML= `<em> the perimeter of a circle with a radius of ${someradius(18)}</em>`; */ 
+     document.write(perimeter(10));
+     document.getElementById('perimterout').innerHTML= `<em> a circle with a perimeter and a radius of ${someradius}cm equal to ${perimeter(someradius)} cm </em>`; 
+
+       </script>
+    </div>
+    
+</body>
+</html>
+   

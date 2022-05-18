@@ -1,0 +1,58 @@
+header img {
+    float: left;
+}
+header nav {
+    float: right;
+    margin-top: 16px;
+    color: #fff;
+}
+header nav ul li {
+    display: inline;
+    padding: 8px 12px 8px 12px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.facebook {
+    background: #3b5998;
+}
+.twitter {
+    background: #00aced;
+}
+.google {
+    background: #d34836;
+}
+.whatsapp {
+    background: 4caf50;
+}
+.side-image {
+    display: block;
+    width: 100%;
+}
+.content-image {
+    float: left;
+    width: 40px;
+}
+div .content-text {
+    float: right;
+    margin-left: 400px;
+    margin-top: -700px;
+    padding: 40px;
+}
+h1 {
+    font-size: 30px;
+    margin-bottom: 15px 0 15px 0;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px 0 10px 0 
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 8px 0 8px 0;
+}
+p {
+    font-size: 14px;
+}

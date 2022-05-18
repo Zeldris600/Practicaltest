@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "static-website",
+			"path": "../MTN Elite One/static-website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Practicaltest"
+	}
+}

@@ -1,0 +1,28 @@
+.Card3 {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    margin-left: 30px;
+    width: 787px;
+    height: 582px;
+    padding: 0.01em 16px;
+    margin: auto;
+    /* color: #607d8b; */
+}
+button {
+    border: none;
+    padding: 8px 16px;
+    margin-left: 161px;
+}
+.input {
+    margin: 14px;
+    margin-top: 30px;
+    height: 63px;
+    width: 127px;
+    
+}
+h1,h2 {
+    text-align: center;
+}
+#btn-2 {
+    margin-left: 356px;
+    width: 84px;
+}

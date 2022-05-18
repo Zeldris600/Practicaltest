@@ -1,0 +1,22 @@
+#container {
+    padding: 30px;
+    border:  1px;
+    text-align: center;
+    height: auto;
+    font-size: 62px;
+    margin: 30px;
+    box-shadow:  1px 2px 15px blue;
+    background-color: whitesmoke; 
+    
+   
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+ body {
+    /* background-image: url(../Images/wallpaperflare.com_wallpaper\ \(25\).jpg); */
+    margin: 0px;
+    background-color: #F7E2E2;
+} 
