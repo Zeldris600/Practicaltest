@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/employess.css">
+</head>
+<body>
+    
+    <div id="input" onload="initUI()">
+        <h2>Employee Daily Log</h2>
+      <div class="d2" style="display: flex;"><label for="">Arrival</label><span><input type="time" id="arrival"><br></span>
+     </div>
+      <div class="d2" style="display: flex;"><label for="">Departure</label><span><input type="time" id="departure"><br></span>
+        </div>
+      <div class="d2" style="display: flex;"><label for="">Choose an employee</label><span><input type="text" id="employeeName"><br></span>
+        </div>
+      <button onclick="registerEmployee(),saveEmployeeToList(),addToList()">Register</button>
+      
+    </div>
+    <div class="output"></div>
+    <script>
+        let saveEmployee = localStorage.getItem('employee')
+        let arrivalTime2,departureTime2,nameInp;
+        let employee = {
+            name:'',
+            arrivalTime: null,
+            depatureTime: null,
+        }
+         let employeeList = JSON.parse(saveEmployee);  
+        
+        
+        function initUI() {
+            arrivalTime2 = document.getElementById("arrival")
+            departureTime2 = document.getElementById("departure")
+            nameInp = document.getElementById("employeeName")
+        }
+        function registerEmployee() { // add employee to employee object
+            employee.name = nameInp
+            employee.arrivalTime =arrivalTime2
+            employee.depatureTime = departureTime2
+        }
+        function saveEmployeeToList() {
+           let listSave = JSON.stringify(employeeList)
+           localStorage.setItem('employee',listSave)
+           employee = {
+            name:'',
+            arrivalTime: null,
+            depatureTime: null,
+        }
+    }
+           
+        function addToList(){
+            employeeList.push(employee)
+         }
+        
+    </script>
+</body>
+</html>
