@@ -1,6 +1,4 @@
-body {
-         color: #607d8b; 
-}
+
 
 #input {
     
@@ -37,4 +35,8 @@ label {
             margin-top: 8px;
              padding-bottom: 19px
     }
+    table {
     
+        margin-left: 160px;
+        margin-top: 55px;
+    }

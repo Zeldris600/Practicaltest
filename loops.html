@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="1 ">
+        <thead style="width:100%"><tr><th style="text-align:left">Name</th><th>Lesson</th></tr></thead>
+        <tbody id="books"></tbody>
+    </table>
+    <script>
+      let  books = [
+            {name:'Bio',lesson:'Transport'}, 
+            {name:'Chem',lesson:'Acids'}, 
+            {name:'Physics',lesson:'Forces'}, 
+            {name:'CSC',lesson:'Algo'}, 
+        ]
+      let book2 = ''
+        for (let k of books) {
+            /* book2 += k; */
+            console.log(k)
+             document.getElementById("books").innerHTML += `<tr><td>${k.name}</td><td>${k.lesson}</td></tr>`
+        }
+        
+        </script>
+</body>
+</html>

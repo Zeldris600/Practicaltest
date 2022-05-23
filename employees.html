@@ -7,9 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/employess.css">
 </head>
-<body>
+<body onload="initUI()">
     
-    <div id="input" onload="initUI()">
+    <div id="input" >
         <h2>Employee Daily Log</h2>
       <div class="d2" style="display: flex;"><label for="">Arrival</label><span><input type="time" id="arrival"><br></span>
      </div>
@@ -17,30 +17,46 @@
         </div>
       <div class="d2" style="display: flex;"><label for="">Choose an employee</label><span><input type="text" id="employeeName"><br></span>
         </div>
-      <button onclick="registerEmployee(),saveEmployeeToList(),addToList()">Register</button>
-      
+      <button onclick="registerEmployee()"">Register</button>
+      <div class="output">
+        <table>
+            <thead><tr><th>Name</th><th>Arrival</th><th>Departure</th></tr></thead>
+            <tbody id="output"></tbody> 
+        </table>
     </div>
-    <div class="output"></div>
+    </div>
+    
     <script>
-        let saveEmployee = localStorage.getItem('employee')
-        let arrivalTime2,departureTime2,nameInp;
+        
+        let arrivalTime2,departureTime2,nameInp,output,saveEmployee,employeeList;//
         let employee = {
             name:'',
             arrivalTime: null,
             depatureTime: null,
         }
-         let employeeList = JSON.parse(saveEmployee);  
+       
         
         
         function initUI() {
+            saveEmployee = localStorage.getItem('employee')
+            employeeList = saveEmployee?JSON.parse(saveEmployee):[]
             arrivalTime2 = document.getElementById("arrival")
             departureTime2 = document.getElementById("departure")
             nameInp = document.getElementById("employeeName")
+            output = document.getElementById("output")
+            console.log(employeeList)
+            tableData()
+
         }
         function registerEmployee() { // add employee to employee object
-            employee.name = nameInp
-            employee.arrivalTime =arrivalTime2
-            employee.depatureTime = departureTime2
+            employee.name = nameInp.value
+            employee.arrivalTime =arrivalTime2.value
+            employee.depatureTime = departureTime2.value
+            employeeList.push(employee)
+            console.log(employeeList)
+            saveEmployeeToList()
+            displayEmployes()
+            tableData()
         }
         function saveEmployeeToList() {
            let listSave = JSON.stringify(employeeList)
@@ -52,8 +68,20 @@
         }
     }
            
-        function addToList(){
-            employeeList.push(employee)
+       let  addToList=()=> {
+            
+         }
+         function displayEmployes(){
+           let table = "";
+           let displayTable = employeeList.map(function(ex){
+               let row = `<tr><td>${ex.name}</td><td>${ex.arrivalTime}</td><td>${ex.depatureTime}</td></tr>`;
+               return row;
+           }) 
+           table  = displayTable.join("\n")
+           return table;
+         }
+         function tableData() {
+                  output.innerHTML = displayEmployes()
          }
         
     </script>
