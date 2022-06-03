@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/patient.css">
+</head>
+<body onload="initUI()">
+    
+    <div class="div1">
+        <h1>Patient Follow-up</h1>
+        <label for="">Name:</label><input type="text" name="" id="name"><br>
+        <label for="">Age:</label><input type="number" name="" id="age"><br>
+        <label for="">Disease:</label><input type="text" name="" id="disease"><br>
+        <button id="btn" onclick="createNewPatient(),addPatient(),storePatient(),showTable()">Register</button>
+        
+    </div>
+    <table border="1" >
+        <thead>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Disease</td>
+            <tbody id="table">
+
+            </tbody>
+        </thead>
+    </table>
+    <script src="Javascript/patient.js"></script>
+</body>
+</html>
